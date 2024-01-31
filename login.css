@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    min-height: 100vh;
+    gap: 10vw;
+    background-image: url(Material/bgimg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+.main{
+    width: 420px;
+    background-color: transparent;
+    
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.main:hover{
+    box-shadow: 5px 5px 5px rgb(59, 70, 73);
+    transform: scale(1.1);
+    transition: 2s ease-out;
+}
+form{
+    display: flex ;
+    flex-direction: column;
+    gap: 11px;
+    
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    
+
+}
+.input-box{
+    text-align: center;
+   
+    width: 200px;
+    margin: 0 auto;
+    margin-left: 50px;
+    padding: 5px;
+    height: 50px;
+    position: relative;
+}
+.input{
+    padding: 20px 40px;
+    height: 10px;
+    width: 300px;
+    border-radius: 15px;
+}
+i{
+    position: absolute;
+    right: -90px;
+    top: 20px;
+}
+.remember-forgot{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.Btn{
+    text-align: center;
+    margin-left: 60px;
+    padding: 5px 10px;
+    height: 35px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgb(11, 53, 67);
+    color: white;
+    font-size: 15px;
+    align-items: center;
+}
+.register-link{
+    text-align: center;
+}
+@media (max-width:600px)
+{
+    .input-box{
+        text-align: center;
+       
+        width: 100px;
+        margin: 0 auto;
+        margin-left: 0px;
+        padding: 5px;
+        height: 50px;
+        position: relative;
+    }
+    .input{
+        padding: 20px 40px;
+        height: 10px;
+        width: 300px;
+        border-radius: 15px;
+    }
+    i{
+        position: absolute;
+        right: -170px;
+        top: 20px;
+    }
+}
